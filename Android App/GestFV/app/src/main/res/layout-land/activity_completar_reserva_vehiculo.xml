@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".CompletarReservaVehiculoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titulo_activity_alquilar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/reservar"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_datos_alquiler_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titulo_activity_alquilar_vehiculo"
+            android:layout_marginStart="125dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/fondo_items">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_fecha_fin_alquiler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="sans-serif"
+                app:boxStrokeColor="@color/color_app"
+                app:hintEnabled="false" />
+
+            <ImageView
+                android:id="@+id/imagen_vehiculo_reserva"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="155dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="155dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagen_vehiculo_reserva"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mostrar_marca_modelo_vehiculo_reserva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll1"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fecha_inicio_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/fecha_inicio"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mostrar_fecha_inicio_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text=""
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll2"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fecha_fin_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/fecha_fin"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mostrar_fecha_fin_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text=""
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll3"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_precio_dia_vehiculo_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/precio_dia"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mostrar_precio_dia_vehiculo_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text=""
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mostrar_divisa_precio_dia_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/euro"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll4"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_precio_alquiler_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/total_pagar"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mostrar_precio_alquiler_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/ejemplo"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_mostrar_divisa_reserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/euro"
+                    android:textColor="@color/texto"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_metodo_pago_reserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll5"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/metodo_pago"
+                android:textColor="@color/texto"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/boton_pago_efectivo_reserva"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_metodo_pago_reserva"
+                android:layout_marginStart="94dp"
+                android:layout_marginEnd="94dp"
+                android:layout_marginBottom="24dp"
+                android:drawableLeft="@drawable/ic_euro"
+                android:drawableTint="@color/color_app"
+                android:fontFamily="sans-serif"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:text="@string/efectivo"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:backgroundTint="@color/fondo" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_volver_reserva_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_datos_alquiler_fecha"
+            android:layout_marginStart="195dp"
+            android:layout_marginEnd="195dp"
+            android:layout_marginBottom="32dp"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:drawableTint="@color/white"
+            android:text="@string/volver"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/color_app" />
+
+    </RelativeLayout>
+
+</ScrollView>

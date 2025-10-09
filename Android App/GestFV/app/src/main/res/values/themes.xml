@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GestFV" parent="Theme.Material3.DayNight.NoActionBar"/>
+
+    <style name="Theme.GestFV" parent="Base.Theme.GestFV"/>
+
+    <style name="Theme.Splash" parent="Theme.GestFV">
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorControlActivated">@color/color_app</item>
+    </style>
+
+</resources>

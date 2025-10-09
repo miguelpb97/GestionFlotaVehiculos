@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".RegistrarUsuarioActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titulo_completar_datos_usuario_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="68dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/agregar_revision"
+            android:textAlignment="center"
+            android:textColor="@color/texto"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_matricula_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_titulo_completar_datos_usuario_activity"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/matricula_vehiculo"
+            android:textAlignment="textStart"
+            android:textColor="@color/texto"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_matricula_vehiculo_revision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_matricula_vehiculo"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxBackgroundColor="@color/fondo_item"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_matricula_vehiculo_revision"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_car"
+                android:fontFamily="sans-serif"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_tipo_revision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_matricula_vehiculo_revision"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/tipo_revision"
+            android:textAlignment="textStart"
+            android:textColor="@color/texto"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_tipo_revision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tipo_revision"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp">
+
+            <RadioButton
+                android:id="@+id/rb_itv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_app"
+                android:text="@string/itv" />
+
+            <RadioButton
+                android:id="@+id/rb_mantenimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_app"
+                android:text="@string/mantenimiento" />
+
+            <RadioButton
+                android:id="@+id/rb_reparacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_app"
+                android:text="@string/reparacion" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_km_leidos_revision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rg_tipo_revision"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_km_leidos_revision"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_km"
+                android:fontFamily="sans-serif"
+                android:hint="@string/kilometraje"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_fecha_revision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_km_leidos_revision"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_fecha_revision"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_date"
+                android:focusable="false"
+                android:fontFamily="sans-serif"
+                android:hint="@string/fecha_revision"
+                android:inputType="date"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_fecha_siguiente_revision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_fecha_revision"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_fecha_siguiente_revision"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_date"
+                android:focusable="false"
+                android:fontFamily="sans-serif"
+                android:hint="@string/siguiente_revision_agregar"
+                android:inputType="date"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_precio_revision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_fecha_siguiente_revision"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_precio_revision"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_euro"
+                android:focusable="false"
+                android:fontFamily="sans-serif"
+                android:hint="@string/precio_revision"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_agregar_revision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_precio_revision"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif"
+            android:text="@string/agregar_revision"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/color_app" />
+
+    </RelativeLayout>
+
+</ScrollView>

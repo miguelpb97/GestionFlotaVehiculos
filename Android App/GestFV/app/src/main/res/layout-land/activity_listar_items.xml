@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".ListarItemsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+
+        <TextView
+            android:id="@+id/tv_titulo_activity_lista_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="155dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="sans-serif"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_listar_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_titulo_activity_lista_items"
+            android:layout_marginStart="225dp"
+            android:layout_marginEnd="225dp"
+            android:layout_marginBottom="46dp"
+            android:background="@color/fondo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_volver_ver_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recycler_view_listar_items"
+            android:layout_marginStart="195dp"
+            android:layout_marginEnd="195dp"
+            android:layout_marginBottom="32dp"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:drawableTint="@color/white"
+            android:text="@string/volver"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/color_app" />
+
+    </RelativeLayout>
+
+</ScrollView>

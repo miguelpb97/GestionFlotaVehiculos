@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".BuscarVehiculosActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titulo_activity_alquilar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/busqueda_vehiculos"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_datos_alquiler_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titulo_activity_alquilar_vehiculo"
+            android:layout_marginStart="125dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/fondo_items">
+
+            <TextView
+                android:id="@+id/tv_titulo_datos_alquiler_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/elegir_fecha"
+                android:textColor="@color/texto"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_fecha_inicio_alquiler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_titulo_datos_alquiler_fecha"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif"
+                app:boxStrokeColor="@color/color_app"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_fecha_inicio_alquiler"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:drawableStart="@drawable/ic_date"
+                    android:focusable="false"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/fecha_inicio"
+                    android:inputType="date"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="center" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tv_fecha_fin_alquiler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_fecha_inicio_alquiler"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif"
+                app:boxStrokeColor="@color/color_app"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_fecha_fin_alquiler"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:drawableStart="@drawable/ic_date"
+                    android:focusable="false"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/fecha_fin"
+                    android:inputType="date"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textAlignment="center" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_iniciar_busqueda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_datos_alquiler_fecha"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="195dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/color_app"
+            android:drawableLeft="@drawable/ic_find"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif"
+            android:text="@string/iniciar_busqueda"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:background="@drawable/boton_custom_azul"
+            app:strokeColor="@color/color_app"
+            app:strokeWidth="1dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

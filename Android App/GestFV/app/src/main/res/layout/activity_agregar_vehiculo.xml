@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".RegistrarUsuarioActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titulo_completar_datos_usuario_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="68dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/agregar_vehiculo"
+            android:textAlignment="center"
+            android:textColor="@color/texto"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_marca_agregar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_titulo_completar_datos_usuario_activity"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_marca_agregar_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_car"
+                android:fontFamily="sans-serif"
+                android:hint="@string/marca"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_modelo_agregar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_marca_agregar_vehiculo"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_modelo_agregar_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_car"
+                android:fontFamily="sans-serif"
+                android:hint="@string/modelo"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_matricula_agregar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_modelo_agregar_vehiculo"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_matricula_agregar_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_plate"
+                android:fontFamily="sans-serif"
+                android:hint="@string/matricula"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_anio_agregar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_matricula_agregar_vehiculo"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_anio_agregar_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_date"
+                android:fontFamily="sans-serif"
+                android:hint="@string/anio"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_potencia_agregar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_anio_agregar_vehiculo"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_potencia_agregar_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_engine"
+                android:fontFamily="sans-serif"
+                android:hint="@string/potencia"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_kilometraje_agregar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_potencia_agregar_vehiculo"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_kilometraje_agregar_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_km"
+                android:fontFamily="sans-serif"
+                android:hint="@string/kilometraje"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_precio_dia_agregar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_kilometraje_agregar_vehiculo"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_precio_dia_agregar_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_euro"
+                android:fontFamily="sans-serif"
+                android:hint="@string/precio_dia"
+                android:inputType="numberDecimal"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_url_imagen_agregar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_precio_dia_agregar_vehiculo"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_url_imagen_agregar_vehiculo"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_image"
+                android:drawableTint="@color/black"
+                android:fontFamily="sans-serif"
+                android:hint="@string/url_imagen"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_tipo_combustible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_url_imagen_agregar_vehiculo"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/tipo_combustible"
+            android:textAlignment="textStart"
+            android:textColor="@color/texto"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_tipo_combustible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tipo_combustible"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp">
+
+            <RadioButton
+                android:id="@+id/rb_diesel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_app"
+                android:text="@string/diesel" />
+
+            <RadioButton
+                android:id="@+id/rb_gasolina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_app"
+                android:text="@string/gasolina" />
+
+            <RadioButton
+                android:id="@+id/rb_hibrido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_app"
+                android:text="@string/hibrido" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_disponibilidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_tipo_combustible"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/disponibilidad"
+            android:textAlignment="textStart"
+            android:textColor="@color/texto"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_disponibilidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_disponibilidad"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp">
+
+            <RadioButton
+                android:id="@+id/rb_disponible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_app"
+                android:text="@string/disponible" />
+
+            <RadioButton
+                android:id="@+id/rb_no_disponible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/color_app"
+                android:text="@string/no_disponible" />
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_agregar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rg_disponibilidad"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif"
+            android:text="@string/agregar_vehiculo"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/color_app" />
+
+    </RelativeLayout>
+
+</ScrollView>

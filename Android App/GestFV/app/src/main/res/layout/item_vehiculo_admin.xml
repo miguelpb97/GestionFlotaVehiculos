@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/fondo_items">
+
+    <ImageView
+        android:id="@+id/imagen_item_vehiculo_admin"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagen_item_vehiculo_admin"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/fondo_descripcion_item"
+        android:padding="20sp">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_marca_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/marca"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_marca_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_modelo_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/modelo"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_modelo_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_anio_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/anio"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_anio_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_potencia_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/potencia"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_potencia_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_cv_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/cv"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_combustible_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/combustible"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_combustible_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_kilometraje_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/km"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_kilometraje_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_precio_diario_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/precio_dia"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_precio_diario_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_divisa_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/euro"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_matricula_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/matricula"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_matricula_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_disponibilidad_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visibilidad_vehiculo"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_disponibilidad_vehiculo_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/gl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_ver_revisiones_vehiculo_item_admin"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:drawableLeft="@drawable/ic_car_repair_24"
+            android:drawableTint="@color/white"
+            android:text="@string/revisiones"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/boton_gris" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_localizar_vehiculo_item_admin"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawableTint="@color/white"
+            android:text="@string/localizar"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/boton_gris" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_deshabilitar_vehiculo_item_admin"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:drawableLeft="@drawable/ic_visibility_off"
+            android:drawableTint="@color/white"
+            android:text="@string/visibilidad"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/boton_gris" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_borrar_vehiculo_item_admin"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_delete"
+            android:drawableTint="@color/white"
+            android:text="@string/borrar"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/boton_gris" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_agregar_revision_vehiculo_item_admin"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawableTint="@color/white"
+            android:text="@string/agregar_revision"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/boton_gris" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_ver_historial_alquileres_vehiculo_item_admin"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_rental_24"
+            android:drawableTint="@color/white"
+            android:text="@string/ver_historial"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/boton_gris" />
+
+    </GridLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".LocalizarVehiculoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titulo_localizar_vehiculo_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/localizacion"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <FrameLayout
+            android:id="@+id/frame_support_map"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/titulo_localizar_vehiculo_activity"
+            android:layout_marginStart="125dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="32dp">
+
+            <fragment
+                android:id="@+id/mapa_localizar"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_volver_localizar_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame_support_map"
+            android:layout_marginStart="195dp"
+            android:layout_marginEnd="195dp"
+            android:layout_marginBottom="32dp"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:drawableTint="@color/white"
+            android:text="@string/volver"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/color_app" />
+
+    </RelativeLayout>
+
+</ScrollView>

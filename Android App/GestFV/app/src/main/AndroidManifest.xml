@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Damos permisos a internet, localizacion y localizacion precisa -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- API Key google maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBLtMxaHvH_J8cxEwmpBsVDxa0PEAR7A28"/>
+
+        <!-- Activity main login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity registrar usuario -->
+        <activity
+            android:name=".RegistrarUsuarioActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.RegistrarUsuarioActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity menu usuario -->
+        <activity
+            android:name=".MenuPrincipalActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.MenuPrincipalActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity gestionar perfil -->
+        <activity
+            android:name=".GestionarPerfilActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.GestionarPerfilActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity listar items -->
+        <activity
+            android:name=".ListarItemsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.ListarItemsActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity localizar vehiculo -->
+        <activity
+            android:name=".LocalizarVehiculoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.LocalizarVehiculoActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity menu admin -->
+        <activity
+            android:name=".MenuAdminActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.MenuAdminActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity restablecer cedenciales -->
+        <activity
+            android:name=".RestablecerCredencialesActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.RestablecerCredencialesActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity completar datos usuario -->
+        <activity
+            android:name=".ObtenerAyudaActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.ObtenerAyudaActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity agregar vehiculo -->
+        <activity
+            android:name=".AgregarVehiculoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.AgregarVehiculoActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity editar datos usuario -->
+        <activity
+            android:name=".EditarUsuarioActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.EditarUsuarioActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity agregar revision perfil -->
+        <activity
+            android:name=".AgregarRevisionVehiculoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.AgregarRevisionVehiculoActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity buscar vehiculos -->
+        <activity
+            android:name=".BuscarVehiculosActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.BuscarVehiculosActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity completar reserva vehiculo -->
+        <activity
+            android:name=".CompletarReservaVehiculoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.CompletarReservaVehiculoActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Activity confirmacion reserva vehiculo -->
+        <activity
+            android:name=".ConfirmacionReservaVehiculoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GestFV">
+            <intent-filter>
+                <action android:name="com.mapb.GestFV.ConfirmacionReservaVehiculoActivity" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

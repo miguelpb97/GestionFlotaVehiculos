@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".RestablecerCredencialesActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_titulo_restablecer_credenciales"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/restablecer_credenciales"
+            android:textAlignment="center"
+            android:textColor="@color/texto"
+            android:textColorHint="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_introduce_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_titulo_restablecer_credenciales"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/introduce_email"
+            android:textAlignment="center"
+            android:textColor="@color/texto"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_email_usuario_registro_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_introduce_email"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif"
+            app:boxStrokeColor="@color/color_app"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/et_email_usuario_registro_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:drawableStart="@drawable/ic_mail"
+                android:fontFamily="sans-serif"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:hint="@string/email"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_restablecer_credenciales"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_email_usuario_registro_usuario"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="32dp"
+            android:drawableLeft="@drawable/ic_lock_open"
+            android:drawableTint="@color/white"
+            android:fontFamily="sans-serif"
+            android:text="@string/restablecer"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/color_app" />
+
+    </RelativeLayout>
+
+</ScrollView>

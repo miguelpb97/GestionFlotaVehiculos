@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/fondo_items">
+
+    <ImageView
+        android:id="@+id/icono_item_usuario_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_perm_identity" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icono_item_usuario_admin"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/fondo_descripcion_item"
+        android:padding="20sp">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_uid_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uid_usuario"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_uid_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_email_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_email_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nombre_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_nombre_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_dni_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dni"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_dni_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_telefono_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telefono"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_telefono_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_fecha_nac_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_nac"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_fecha_nac_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tipo_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/tv_mostrar_tipo_usuario_item_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:text="@string/ejemplo"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/boton_editar_usuario_item_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:drawableLeft="@drawable/ic_edit"
+        android:drawableTint="@color/white"
+        android:text="@string/editar_usuario"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/boton_gris" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/boton_ver_alquileres_usuario_item_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boton_editar_usuario_item_admin"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="84dp"
+        android:drawableLeft="@drawable/ic_show"
+        android:drawableTint="@color/white"
+        android:text="@string/ver_alquileres"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/boton_gris" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/boton_borrar_usuario_item_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boton_ver_alquileres_usuario_item_admin"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/ic_delete"
+        android:drawableTint="@color/white"
+        android:text="@string/borrar_usuario"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/boton_gris" />
+
+</RelativeLayout>

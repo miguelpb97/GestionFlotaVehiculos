@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".MenuPrincipalActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo_app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/ic_logo_app" />
+
+        <TextView
+            android:id="@+id/tv_bienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logo_app"
+            android:layout_marginTop="32dp"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_alquilar_un_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_bienvenida"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="155dp"
+            android:drawableLeft="@drawable/ic_car"
+            android:drawableTint="@color/white"
+            android:text="@string/alquilar_vehiculo"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:backgroundTint="@color/color_app" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_ver_alquileres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boton_alquilar_un_vehiculo"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="155dp"
+            android:drawableLeft="@drawable/ic_rental_24"
+            android:drawableTint="@color/white"
+            android:text="@string/ver_alquileres"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@color/color_app" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_gestion_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boton_ver_alquileres"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="155dp"
+            android:drawableLeft="@drawable/ic_assignment_ind"
+            android:drawableTint="@color/white"
+            android:text="@string/gestionar_perfil"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@color/color_app" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/boton_cerrar_sesion_admin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/boton_gestion_perfil"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="225dp"
+            android:layout_marginBottom="32dp"
+            android:drawableLeft="@drawable/ic_logout"
+            android:drawableTint="@color/black"
+            android:fontFamily="sans-serif"
+            android:text="@string/cerrar_sesion"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:backgroundTint="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>
