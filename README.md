@@ -1,5 +1,5 @@
 Proyecto Final: Formacion Profesional Desarollo de Aplicaciones Multiplataforma
-App Android de gestión de flota de vehículos de alquiler mediante Firebase Auth y Firebase Storage, entre otras librerias.
+App Android de gestión de flota de vehículos de alquiler mediante Firebase Auth, Firebase Storage y Google Maps API, entre otras librerias.
 
 [Memoria](https://docs.google.com/document/d/1gPrNyviJKEiK-RApWDo_n3iRu8pveh-t/edit?usp=sharing&ouid=114912278353111152564&rtpof=true&sd=true)
 
